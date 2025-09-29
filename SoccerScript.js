@@ -40,18 +40,3 @@ faqItems.forEach(item => {
   });
 });
 
-
-document.addEventListener("DOMContentLoaded", () => {
-    const scrollElements = document.querySelectorAll(".fade-in, .slide-up");
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add("show-fade");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.2 });
-
-    scrollElements.forEach(el => observer.observe(el));
-});

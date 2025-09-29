@@ -764,18 +764,6 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Inicialmente escondido */
-.fade-in, .slide-up {
-    opacity: 0;
-    transform: translateY(30px); /* pequeno deslocamento */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* Quando entrar na tela */
-.show-fade {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 @media (max-width: 1024px) {
